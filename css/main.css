@@ -1,0 +1,74 @@
+body {
+    /* This has to be same as the text-shadows below */
+    background: lightgrey;
+    margin: 0 auto;
+}
+
+h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 5em;
+  line-height: 1em;
+  background-color: #565656;
+  color: transparent;
+  text-shadow: 0px 2px 3px rgba(255,255,255,0.45);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 5em;
+  line-height: 1em;
+  background-color: #565656;
+  color: transparent;
+  text-shadow: 0px 2px 3px rgba(255,255,255,0.45);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+/*breathing effct*/
+
+.rotate {}
+
+.normalBox {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0,0,0,0.3));
+  filter: drop-shadow(3px 3px 2px rgba(0,0,0,0.3));
+	height: 800px; 
+	width: 800px;
+}
+
+.relaxbox {
+  -webkit-animation: fade 9s infinite; /* Safari 4+ */
+  -moz-animation: fade 9s infinite; /* Fx 5+ */
+  -o-animation: fade 9s infinite; /* Opera 12+ */
+  animation: fade 9s infinite; /* IE 10+, Fx 29+ 
+  */
+  transition-timing-function:  cubic-bezier(0.45,0.05,0.7,1.5);
+}
+
+@-webkit-keyframes fade {
+  0%   { opacity: 1; }
+  50%  {opacity: 0;}
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fade {
+  0%   { opacity: 1; }
+  50% {opacity: 0;}
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fade {
+  0%   { opacity: 1; }
+  50% {opacity: 0;}
+  100% { opacity: 1; }
+}
